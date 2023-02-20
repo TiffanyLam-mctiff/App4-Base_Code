@@ -57,7 +57,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var covidPercent = (covid_count/6)*100; //take the covid count and divide by the total number of questons asked, then convert to percentage.
 		var fluPercent = (flu_count/6)*100; //take the flu count and divide by the total number of questons asked, then convert to percentage.
 		//create resultText variable using getElementById
-		var resultText = document.getElementById("results");
+		var resultText = document.getElementById("results2");
 		resultText.innerHTML = "<br>Probability it is COVID =" + covidPercent + "%" + "<br>Probability it is a flu =" + fluPercent + "%"; 		
         }//end of getResult
 	
@@ -202,7 +202,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<button class="border" onclick="getResult();"> Results </button>
-		<a id="results"></a>
+		<a id="results2"></a>
 
 		
 <footer class="w3-bottom w3-container w3-flat-carrot">
