@@ -54,8 +54,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	//create function to calculate percentage of questions that lend to COVID and flu
 	function getResult(){
 		//create calculation variables
-		var allergyPercent = (covid_count/6)*100; //take the covid count and divide by the total number of questons asked, then convert to percentage.
-		var coldPercent = (flu_count/6)*100; //take the flu count and divide by the total number of questons asked, then convert to percentage.
+		var covidPercent = (covid_count/6)*100; //take the covid count and divide by the total number of questons asked, then convert to percentage.
+		var fluPercent = (flu_count/6)*100; //take the flu count and divide by the total number of questons asked, then convert to percentage.
 		//create resultText variable using getElementById
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "<br>Probability it is COVID =" + covidPercent + "%" + "<br>Probability it is a flu =" + fluPercent + "%"; 		
